@@ -7,7 +7,7 @@ function uppg7() {
     // kalla på funktionen i en return statement och ge den parametrarna 5 och 10
 
  let x = 5, y = 10;
-console.log(minfunktion(y, x))
+return(minfunktion(y, x))
 
 function minfunktion(x, y) {
 return x + y;
