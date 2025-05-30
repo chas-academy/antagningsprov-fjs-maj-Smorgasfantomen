@@ -8,21 +8,21 @@ function uppg9 (){
 
     // anropa funktionen och skicka med en array som argument
 
-let numbers = [3, 15, 20, 5, 79, 78, 51, 32, 5001];
+let number = [3, 15, 20, 5, 79, 78, 51, 32, 5001];
 
 
-    sort(numbers)
+    sort(number)
 
 function sort() {
-    for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-        console.log(numbers[i] + " jämnt")
+    for (let i = 0; i < number.length; i++) {
+    if (number[i] % 2 === 0) {
+        console.log(number[i] + " jämnt")
     } else {
-        console.log(numbers[i] + " udda");
+        console.log(number[i] + " udda");
     }
 }
 }
-
 }
+
 
 module.exports = { uppg9 };
