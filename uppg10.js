@@ -25,10 +25,7 @@ for (let i = 0; i < numbers.length; i++) {
     } else {
               other.push(numbers[i]);
     }
-  }
+    return { bigEven: bigEven, smallOdd: smallOdd, other: other };
+}}
 
-return {Bigeven: bigEven, Smallodd: smallOdd, Other: other};
-  
-}
   module.exports = { uppg10 };
-  
