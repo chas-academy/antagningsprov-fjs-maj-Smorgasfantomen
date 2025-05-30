@@ -12,6 +12,23 @@ function uppg10(){
     
   
   }
-  
+  const numbers = [5, 12, 7, 10, 20, 9, 11];
+let bigEven = [];
+let smallOdd = [];
+let other = [];
+
+for (let i = 0; i < numbers.length; i++) {
+
+  if ((numbers[i] % 2 == 0) && (numbers[i] > 10)) {
+        bigEven.push(numbers[i]);
+    } else if (!(numbers[i] % 2 == 0) && (numbers[i] < 10)) {
+        smallOdd.push(numbers[i]);
+    } else {
+              other.push(numbers[i]);
+    }
+
+let arrays = {Bigeven: bigEven, Smallodd: smallOdd, Other: other}
+  }
+
   module.exports = { uppg10 };
   
