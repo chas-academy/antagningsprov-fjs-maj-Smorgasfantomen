@@ -9,9 +9,8 @@ function uppg7() {
  let x = 5, y = 10;
 console.log(minfunktion(y, x))
 
-
 function minfunktion(x, y) {
-return x * y;
+return x + y;
 }
 
 }
