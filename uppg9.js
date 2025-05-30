@@ -11,22 +11,19 @@ function uppg9 (){
 const number = [3, 15, 20, 5, 79, 78, 51, 32, 5001];
 
 
-    sort(number)
+    sort(number);
 
-function sort() {
-    for (let i = 0; i < number.length; i++) {
-    if (number[i] % 2 === 0) {
-        outputnum = number[i];
-        console.log(outputnum);
-        console.log("jämnt");
-    } else {
-        outputnum = number[i];
-        console.log(outputnum);
-        console.log("udda");
+    function sort(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                console.log(`${arr[i]} jämt`);
+            } else {
+                console.log(`${arr[i]} udda`);
+            }
+        }
     }
 }
-}
-}
+
 
 
 module.exports = { uppg9 };
