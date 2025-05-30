@@ -16,16 +16,17 @@ let bigEven = [];
 let smallOdd = [];
 let other = [];
 
-for (let i = 0; i < numbers.length; i++) {
-
-  if ((numbers[i] % 2 == 0) && (numbers[i] > 10)) {
-        bigEven.push(numbers[i]);
-    } else if (!(numbers[i] % 2 == 0) && (numbers[i] < 10)) {
-        smallOdd.push(numbers[i]);
-    } else {
-              other.push(numbers[i]);
+    for (let i = 0; i < numbers.length; i++) {
+        if ((numbers[i] % 2 == 0) && (numbers[i] > 10)) {
+            bigEven.push(numbers[i]);
+        } else if (!(numbers[i] % 2 == 0) && (numbers[i] < 10)) {
+            smallOdd.push(numbers[i]);
+        } else {
+            other.push(numbers[i]);
+        }
     }
-    return { bigEven: bigEven, smallOdd: smallOdd, other: other };
-}}
 
-  module.exports = { uppg10 };
+    return { bigEven: bigEven, smallOdd: smallOdd, other: other };
+}
+
+module.exports = { uppg10 };
