@@ -16,13 +16,11 @@ const number = [3, 15, 20, 5, 79, 78, 51, 32, 5001];
 function sort() {
     for (let i = 0; i < number.length; i++) {
     if (number[i] % 2 === 0) {
-        console.log(number[i]);
-        console.log("jämnt");
-
+        output = number[i] + " jämnt";
+        console.log(output);
     } else {
-        console.log(number[i]);
-        console.log("udda")
-
+        output = number[i] + " udda";
+        console.log(output);
     }
 }
 }
